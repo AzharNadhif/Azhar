@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Section Card Redesign</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+    <style>
+        /* Main Styling */
+        body {
+            background-color: #f7f9fc;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        /* Enhanced Section Preview */
+        .preview .card {
+            border-radius: 20px;
+            border: none;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            overflow: hidden;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .preview .card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0) 100%);
+            z-index: -1;
+            opacity: 0;
+            transition: opacity 0.4s ease;
+        }
+
+        .preview .card:hover {
+            transform: translateY(-12px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+        }
+        
+        .preview .card:hover::before {
+            opacity: 1;
+        }
+
+        .preview .card h2 {
+            font-size: 1.7rem;
+            font-weight: 700;
+            margin-bottom: 10px;
+            position: relative;
+            display: inline-block;
+        }
+        
+        .preview .card p {
+            font-size: 1rem;
+            opacity: 0.8;
+        }
+        
+        /* Project Card */
+        .projek {
+            background: linear-gradient(135deg, #4e54c8 0%, #8f94fb 100%) !important;
+            color: white;
+        }
+        
+        .projek i {
+            font-size: 2rem;
+            margin-bottom: 15px;
+            transition: transform 0.5s ease;
+        }
+        
+        .projek:hover i {
+            transform: translateX(10px);
+        }
+        
+        /* Education Card */
+        .edu-card {
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%) !important;
+            color: #333;
+        }
+        
+        .edu-card i {
+            font-size: 2rem;
+            margin-bottom: 12px;
+            transition: transform 0.5s ease;
+            color: #4e54c8;
+        }
+        
+        .edu-card:hover i {
+            transform: translateY(-7px) rotateY(180deg);
+        }
+        
+        /* About Me Card */
+        .me-card {
+            background: linear-gradient(135deg, #2c3e50 0%, #4c516d 100%) !important;
+            color: white;
+        }
+        
+        .me-card i {
+            font-size: 2rem;
+            margin-bottom: 12px;
+            transition: transform 0.5s ease;
+            color: #e0e0e0;
+        }
+        
+        .me-card:hover i {
+            transform: scale(1.3);
+        }
+        
+        /* Contact Card */
+        .hubungi {
+            background: linear-gradient(135deg, #ffd900 0%, #ffc107 100%) !important;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .hubungi::after {
+            content: "";
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 50%;
+            top: -50px;
+            right: -50px;
+            transition: all 0.5s ease;
+        }
+        
+        .hubungi:hover::after {
+            width: 300px;
+            height: 300px;
+            top: -100px;
+            right: -100px;
+        }
+        
+        .hubungi i {
+            font-size: 2rem;
+            color: #333;
+            margin-right: 10px;
+            vertical-align: middle;
+        }
+        
+        /* Custom Icon Animation */
+        .icon-container {
+            display: inline-block;
+            transition: all 0.4s ease;
+        }
+        
+        .card:hover .icon-container {
+            transform: rotate(15deg);
+        }
+        
+        /* Card Heights */
+        .h-200 {
+            height: 170px;
+        }
+
+        /* Card content animation */
+        .card-content {
+            transition: all 0.3s ease;
+        }
+        
+        .card:hover .card-content {
+            transform: translateY(-5px);
+        }
+
+        /* Custom Pulse Animation for Icons */
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+            100% { transform: scale(1); }
+        }
+        
+        .preview .card:hover i {
+            animation: pulse 1.5s infinite;
+        }
+    </style>
+</head>
+<body>
+    <div class="container py-5">
+       
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Function to handle section display
+        function showSection(sectionId) {
+            console.log("Showing section: " + sectionId);
+            // Add your logic to show the appropriate section
+        }
+        
+        // Add hover effect on touch devices
+        document.addEventListener('DOMContentLoaded', function() {
+            const cards = document.querySelectorAll('.preview .card');
+            
+            cards.forEach(card => {
+                card.addEventListener('touchstart', function() {
+                    this.classList.add('hover');
+                });
+                
+                card.addEventListener('touchend', function() {
+                    setTimeout(() => {
+                        this.classList.remove('hover');
+                    }, 500);
+                });
+            });
+        });
+    </script>
+</body>
+</html>
