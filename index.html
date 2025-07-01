@@ -1,980 +1,1420 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Azhar's Portfolio</title>
-    <link rel="icon" href="assets/img/aku.png" type="image/x-icon">
+    <link rel="icon" href="assets/img/aku.png" type="image/x-icon" />
     <!-- Bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
     <!-- Style Css -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
     <!-- Google Font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
     <!-- CDN TYPE IT JS -->
     <script src="https://cdn.jsdelivr.net/npm/typeit@8.0.7/dist/index.umd.js"></script>
     <!-- Icon -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
     <script src="https://code.iconify.design/iconify-icon/2.1.0/iconify-icon.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/iconify-icon@2.1.0/dist/iconify-icon.min.js"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/simple-icons-font@v6/font/simple-icons.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/simple-icons-font@v6/font/simple-icons.min.css"
+    />
     <!-- Swiper js -->
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
     <!-- AOS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
-    integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-</head>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+      integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
 
-<body class="bg-dark text-light">
+  <body class="bg-dark text-light">
     <div class="container">
-        <!-- Tempat partikel -->
-        <div id="particles-js"></div>
+      <!-- Tempat partikel -->
+      <div id="particles-js"></div>
 
-        <header class="text-center py-5 mt-2">
-            <!-- <a href="#" onclick="showSection('default')" class="text-decoration-none text-white"> -->
-                <h1 class="display-4 fw-bold nama">Azhar Nadhif Annaufal</h1>
-            <!-- </a> -->
-            <p class="lead" id="companionMethods"></p>
-        </header>
-        
-        <!-- Section Card -->
-        <section class="preview mb-3" id="default" data-aos="fade-in">
+      <header class="text-center py-5 mt-2">
+        <!-- <a href="#" onclick="showSection('default')" class="text-decoration-none text-white"> -->
+        <h1 class="display-4 fw-bold nama">Azhar Nadhif Annaufal</h1>
+        <!-- </a> -->
+        <p class="lead" id="companionMethods"></p>
+      </header>
+
+      <!-- Section Card -->
+      <section class="preview mb-3" id="default" data-aos="fade-in">
+        <div class="row g-3">
+          <!-- Left Card -->
+          <div class="col-md-6">
+            <a
+              href="#"
+              class="text-decoration-none"
+              onclick="showSection('pro')"
+            >
+              <div class="card projek p-4 h-100">
+                <div class="card-content">
+                  <div class="d-flex align-items-center gap-3 mb-2">
+                    <div class="icon-container">
+                      <i class="fa-solid fa-rocket"></i>
+                    </div>
+                    <h2>Project</h2>
+                  </div>
+                  <p class="mt-3">
+                    Explore my recent works and development projects
+                  </p>
+                  <div class="mt-3">
+                    <span class="d-flex align-items-center">
+                      <!-- <span class="me-2">See All Projects</span> -->
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <!-- Right Side (Two rows stacked) -->
+          <div class="col-md-6">
             <div class="row g-3">
-                <!-- Left Card -->
-                <div class="col-md-6">
-                    <a href="#" class="text-decoration-none" onclick="showSection('pro')">
-                        <div class="card projek p-4 h-100">
-                            <div class="card-content">
-                                <div class="d-flex align-items-center gap-3 mb-2">
-                                    <div class="icon-container">
-                                        <i class="fa-solid fa-rocket"></i>
-                                    </div>
-                                    <h2>Project</h2>
-                                </div>
-                                <p class="mt-3">Explore my recent works and development projects</p>
-                                <div class="mt-3">
-                                    <span class="d-flex align-items-center">
-                                        <!-- <span class="me-2">See All Projects</span> -->
-                                    </span>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-            
-                <!-- Right Side (Two rows stacked) -->
-                <div class="col-md-6">
-                    <div class="row g-3">
-                        <!-- Right Top Card - Education -->
-                        <div class="col-6">
-                            <a href="#" class="text-decoration-none" onclick="showSection('edu')">
-                                <div class="card edu-card p-4 h-200">
-                                    <div class="card-content">
-                                        <div class="icon-container">
-                                            <i class="fa-solid fa-graduation-cap"></i>
-                                        </div>
-                                        <h2>Education</h2>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        
-                        <!-- Right Bottom Card - About Me -->
-                        <div class="col-6">
-                            <a href="#" class="text-decoration-none" onclick="showSection('tentang')">
-                                <div class="card me-card p-4 h-200">
-                                    <div class="card-content">
-                                        <div class="icon-container">
-                                            <i class="fa-regular fa-user"></i>
-                                        </div>
-                                        <h2>About Me</h2>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        
-                        <!-- Contact Me Card -->
-                        <div class="col-12">
-                            <a href="#" class="text-decoration-none" onclick="showSection('kontak')">
-                                <div class="card hubungi p-4">
-                                    <div class="card-content d-flex align-items-center">
-                                        <div class="icon-container me-3">
-                                            <i class="fa-solid fa-envelope"></i>
-                                        </div>
-                                        <div>
-                                            <h2 class="text-dark mb-1">Contact Me</h2>
-                                            <p class="mb-0">Get in touch with Me!</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
+              <!-- Right Top Card - Education -->
+              <div class="col-6">
+                <a
+                  href="#"
+                  class="text-decoration-none"
+                  onclick="showSection('edu')"
+                >
+                  <div class="card edu-card p-4 h-200">
+                    <div class="card-content">
+                      <div class="icon-container">
+                        <i class="fa-solid fa-graduation-cap"></i>
+                      </div>
+                      <h2>Education</h2>
                     </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- SECTION SECTION -->
-
-        <!-- Section About -->
-        <section class="about-section mb-4" id="tentang" style="display: none;" data-aos="fade-in">
-                
-                <div class="container">
-                    <a href="#" onclick="showSection('default')" class="back-btn">
-                        <i class="fa-solid fa-circle-left"></i> Back
-                    </a>
-                    
-                    <div class="row">
-                        <!-- About Header -->
-                        <div class="col-lg-6" data-aos="fade-right">
-                            <div class="about-header">
-                                <h1 class="about-title">
-                                    About <span>Me <i class="fa-regular fa-user "></i></span>
-                                </h1>
-                                
-                                <div class="tagline-container" data-aos="fade-up" data-aos-delay="200">
-                                    <p class="tagline-text">
-                                        Goal-focused, process-serious.
-                                        <i class="fa-solid fa-bullseye mx-2" style="color: #ff5757;"></i>
-                                        <i class="fa-solid fa-arrow-trend-up"></i>
-                                    </p>
-                                </div>
-                                <div class="vitae" data-aos="fade-up" data-aos-delay="200">
-                                    <i class="fa-solid fa-newspaper"></i> <a href="https://drive.google.com/file/d/1JBEZ-i7ixyVrut0JeVGZIBgX7NNCLWul/view?usp=drive_link" target="_blank"> Curriculum Vitae</a>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <!-- Profile Image -->
-                        <div class="col-lg-6" data-aos="fade-left">
-                            <div class="about-image-container">
-                                <img src="assets/img/nadippp.jpg" alt="Profile Image" class="about-image">
-                                <div class="about-image-overlay">
-                                    <h4>Web Developer</h4>
-                                    <p>Passionate about creating seamless digital experiences</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <!-- About Content -->
-                    <div class="row mt-5">
-                        <div class="col-lg-12" data-aos="fade-up">
-                            <div class="about-card">
-                                <div class="about-card-header">
-                                    <h3>My Story</h3>
-                                </div>
-                                <div class="about-card-body text-dark">
-                                    <p>
-                                        <span class="typing fw-bold"  id="typed-name"></span>, I'm a passionate <span class="highlight">Full Stack Web Developer</span> with a strong foundation in both front-end and back-end development. As a Software Engineering Technology student, I’ve built engaging user interfaces while also developing robust server-side applications and managing databases effectively.
-                                    </p>
-                                                           
-                                    <p>
-                                        My interest began with the creative aspects of front-end development, but as I progressed, I found equal enthusiasm in back-end logic, API integration, and system architecture. I enjoy the entire development lifecycle — from planning, coding, debugging, to deploying — and value collaboration, clean code, and continuous learning. 
-                                    </p>
-                                    
-                                    <p>
-                                        Aside from my busy schedule in front of the screen, I still make time for my hobbies such as playing soccer or futsal, reading books, listening to my favorite music, and writing poetry, which is a way for me to release my mind.
-                                    </p>
-                                    
-                                    <h4 class="mt-4 mb-3 fw-bold">Technical Skills</h4>
-                                    <div class="skills-container" style="display: flex; flex-wrap: wrap; gap: 12px;">
-                                        <span class="skill-tag"><i class="fab fa-html5"></i> HTML5</span>
-                                        <span class="skill-tag"><i class="fab fa-css3-alt"></i> CSS3</span>
-                                        <span class="skill-tag"><i class="fab fa-js-square"></i> JavaScript</span>
-                                        <span class="skill-tag"><i class="fab fa-php"></i> PHP</span>
-                                        <span class="skill-tag"><i class="si si-mongodb"></i> MongoDB</span>
-                                        <span class="skill-tag"><i class="fas fa-database"></i> MySQL</span>
-                                        <span class="skill-tag"><i class="fab fa-python"></i> Python</span>
-                                        <span class="skill-tag"><i class="si si-postgresql"></i> PostgreSQL</span>
-                                        <span class="skill-tag"><i class="si si-figma"></i> Figma</span>
-                                        <span class="skill-tag"><i class="si si-canva"></i> Canva</span>
-                                        <span class="skill-tag"><i class="fab fa-microsoft"></i> Microsoft Office</span>
-                                        <span class="skill-tag"><i class="fab fa-bootstrap"></i> Bootstrap</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-        </section>
-        
-        
-        
-        <!-- Section Edu -->
-        <section class="education" id="edu" style="display: none;" data-aos="fade-in">
-            <div class="container">
-                <a href="#" onclick="showSection('default')" class="back-btn">
-                    <i class="fa-solid fa-circle-left"></i> Back
+                  </div>
                 </a>
-                
-                <div class="section-header" data-aos="fade-up">
-                    <h1 class="section-title">Education</h1>
-                    <p class="lead">My academic journey and achievements</p>
-                </div>
-    
-                <!-- Timeline Education -->
-                <div class="timeline">
-                    <!-- University -->
-                    <div class="timeline-item" data-aos="fade-right" data-aos-delay="100">
-                        <div class="timeline-content left">
-                            <span class="timeline-date">2022 - Present</span>
-                            <h3 class="timeline-title">Software Engineering Technology</h3>
-                            <p class="timeline-location"><i class="fas fa-map-marker-alt"></i> IPB University</p>
-                            <p class="timeline-desc">
-                                Completed courses in Interface Design, Web Programming, UX Projects, and Software Testing, while building technical and soft skills through collaborative projects and campus activities.
-                            </p>
-                        </div>
-                        <div class="timeline-dot"></div>
-                    </div>
-    
-                    <!-- High School -->
-                    <div class="timeline-item" data-aos="fade-left" data-aos-delay="200">
-                        <div class="timeline-content right">
-                            <span class="timeline-date">2019 - 2022</span>
-                            <h3 class="timeline-title">Software Engineering</h3>
-                            <p class="timeline-location"><i class="fas fa-map-marker-alt"></i> SMK Informatika Pesat</p>
-                            <p class="timeline-desc">
-                               Learned website development basics using HTML, CSS, and PHP, along with database management using MySQL. Completed an internship at 7Sky Global Solution in collaboration with VOKASIBISA on a company profile website project.
-                            </p>
-                        </div>
-                        <div class="timeline-dot"></div>
-                    </div>
-    
-                </div>
-    
-                <!-- Certificates Section -->
-                <div class="certificates-container">
-                    <h2 class="mb-4 fw-bold" data-aos="fade-up">Certificates & Achievements</h2>
-                    <!-- Baris 1 -->
-                    <div class="row">
-                        <!-- Certificate 1 -->
-                        <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="100">
-                            <div class="certificate-card certification-card">
-                                <div class="certificate-tag">Certificate</div>
-                                <div class="certificate-image">
-                                    
-                                    <img src="assets/sertifikat/BNSP.jpg" alt="Web Development Certificate">
-                                    <div class="certificate-overlay">
-                                        <button class="certificate-view-btn"><a href="https://drive.google.com/file/d/12iEwlnxZiXFbYhTsxRuygS0b1Q7lJP62/view?usp=drive_link" target="_blank">View Certificate</a></button>
-                                    </div>
-                                </div>
-                                <div class="certificate-body">
-                                    <h3 class="certificate-title">Software Development and Programming</h3>
-                                    <p class="certificate-issuer"><i class="fas fa-award"></i> Lembaga Sertifikasi Profesi Informatika </p>
-                                    <p class="certificate-date"><i class="far fa-calendar-alt"></i> 2022</p>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <!-- Certificate 2 -->
-                        <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="200">
-                            <div class="certificate-card certification-card">
-                                <div class="certificate-tag">Certificate</div>
-                                <div class="certificate-image">
-                                    <img src="/assets/sertifikat/BWA.jpg">
-                                    <div class="certificate-overlay">
-                                        <button class="certificate-view-btn"><a href="https://drive.google.com/file/d/1S5x-bqoDpZspel1ZEGTHRfb42tcsNlwA/view?usp=drive_link" target="_blank">View Certificate</a></button>
-                                    </div>
-                                </div>
-                                <div class="certificate-body">
-                                    <h3 class="certificate-title">Bootcamp UI/UX </h3>
-                                    <p class="certificate-issuer"><i class="fas fa-award"></i> Build With Angga</p>
-                                    <p class="certificate-date"><i class="far fa-calendar-alt"></i>2024</p>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <!-- Certificate 3 -->
-                        <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="300">
-                            <div class="certificate-card certification-card">
-                                <div class="certificate-tag">Certificate</div>
-                                <div class="certificate-image">
-                                    <img src="assets/sertifikat/PHP1.jpg" alt="JavaScript Certificate">
-                                    <div class="certificate-overlay">
-                                        <button class="certificate-view-btn"><a href="https://drive.google.com/file/d/1cYTiLp--MDn0a_xtjcL0aR6AvRGZYY5d/view?usp=drive_link" target="_blank">View Certificate</a></button>
-                                    </div>
-                                </div>
-                                <div class="certificate-body">
-                                    <h3 class="certificate-title">PHP | Basic Web Programming</h3>
-                                    <p class="certificate-issuer"><i class="fas fa-award"></i> PT Hidaya Jasin Solusindo</p>
-                                    <p class="certificate-date"><i class="far fa-calendar-alt"></i>2021</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+              </div>
 
-                    <!-- Baris 2 -->
-                     <div class="row">
-                        <!-- Certificate 1 -->
-                        <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="100">
-                            <div class="certificate-card certification-card">
-                                <div class="certificate-tag">Certificate</div>
-                                <div class="certificate-image">
-                                    <img src="assets/sertifikat/Dicoding1.jpg" alt="Web Development Certificate">
-                                    <div class="certificate-overlay">
-                                        <button class="certificate-view-btn"><a href="https://drive.google.com/file/d/1B_t_AZRc_dfiCvA1TQKNK6GvhV61mXw3/view?usp=drive_link" target="_blank">View Certificate</a></button>
-                                    </div>
-                                </div>
-                                <div class="certificate-body">
-                                    <h3 class="certificate-title">Learn the basics of AI</h3>
-                                    <p class="certificate-issuer"><i class="fas fa-award"></i> Dicoding </p>
-                                    <p class="certificate-date"><i class="far fa-calendar-alt"></i> 2024</p>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <!-- Certificate 2 -->
-                        <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="200">
-                            <div class="certificate-card certification-card">
-                                <div class="certificate-tag">Certificate</div>
-                                <div class="certificate-image">
-                                    <img src="/assets/sertifikat/WEB1.jpg">
-                                    <div class="certificate-overlay">
-                                        <button class="certificate-view-btn"><a href="https://drive.google.com/file/d/1OeVI8364G9O1rtX78XmQbC7CFd6f4l8G/view?usp=drive_link" target="_blank">View Certificate</a></button>
-                                    </div>
-                                </div>
-                                <div class="certificate-body">
-                                    <h3 class="certificate-title">Web Design | Create Landing Page with HTML, CSS </h3>
-                                    <p class="certificate-issuer"><i class="fas fa-award"></i> PT Tunas Cipta Bersama</p>
-                                    <p class="certificate-date"><i class="far fa-calendar-alt"></i>2020</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Certificate 3 -->
-                        <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="200">
-                            <div class="certificate-card competition-card">
-                                <div class="certificate-tag competition">Achievement</div>
-                                <div class="certificate-image">
-                                    <img src="/assets/sertifikat/reclas1.jpg">
-                                    <div class="certificate-overlay">
-                                        <button class="certificate-view-btn"><a href="https://drive.google.com/file/d/11HzMmz0IP3nuGjxlHhzLzlgHymbt_Amh/view?usp=drive_link" target="_blank">View Certificate</a></button>
-                                    </div>
-                                </div>
-                                <div class="certificate-body">
-                                    <h3 class="certificate-title">2nd Place | Techsprint Challenge UI/UX Competition</h3>
-                                    <p class="certificate-issuer"><i class="fas fa-award"></i> Rechlas Tech</p>
-                                    <p class="certificate-date"><i class="far fa-calendar-alt"></i>2024</p>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        
+              <!-- Right Bottom Card - About Me -->
+              <div class="col-6">
+                <a
+                  href="#"
+                  class="text-decoration-none"
+                  onclick="showSection('tentang')"
+                >
+                  <div class="card me-card p-4 h-200">
+                    <div class="card-content">
+                      <div class="icon-container">
+                        <i class="fa-regular fa-user"></i>
+                      </div>
+                      <h2>About Me</h2>
                     </div>
-                </div>
+                  </div>
+                </a>
+              </div>
+
+              <!-- Contact Me Card -->
+              <div class="col-12">
+                <a
+                  href="#"
+                  class="text-decoration-none"
+                  onclick="showSection('kontak')"
+                >
+                  <div class="card hubungi p-4">
+                    <div class="card-content d-flex align-items-center">
+                      <div class="icon-container me-3">
+                        <i class="fa-solid fa-envelope"></i>
+                      </div>
+                      <div>
+                        <h2 class="text-dark mb-1">Contact Me</h2>
+                        <p class="mb-0">Get in touch with Me!</p>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
             </div>
-        </section>
+          </div>
+        </div>
+      </section>
 
-        <!-- Section Project -->
-        <section class=" py-16 bg-gray-50" id="pro" data-aos="fade-in" style="display: none;">
-            <a href="#" onclick="showSection('default')" class="back-btn">
-                <i class="fa-solid fa-circle-left"></i> Back
-            </a>
-            <div class="section-header text-light" data-aos="fade-up">
-                <h1 class="section-title ">Project</h1>
-                <p class="lead">My latest projects and works</p>
+      <!-- SECTION SECTION -->
+
+      <!-- Section About -->
+      <section
+        class="about-section mb-4"
+        id="tentang"
+        style="display: none"
+        data-aos="fade-in"
+      >
+        <div class="container">
+          <a href="#" onclick="showSection('default')" class="back-btn">
+            <i class="fa-solid fa-circle-left"></i> Back
+          </a>
+
+          <div class="row">
+            <!-- About Header -->
+            <div class="col-lg-6" data-aos="fade-right">
+              <div class="about-header">
+                <h1 class="about-title">
+                  About <span>Me <i class="fa-regular fa-user"></i></span>
+                </h1>
+
+                <div
+                  class="tagline-container"
+                  data-aos="fade-up"
+                  data-aos-delay="200"
+                >
+                  <p class="tagline-text">
+                    Goal-focused, process-serious.
+                    <i
+                      class="fa-solid fa-bullseye mx-2"
+                      style="color: #ff5757"
+                    ></i>
+                    <i class="fa-solid fa-arrow-trend-up"></i>
+                  </p>
+                </div>
+                <div class="vitae" data-aos="fade-up" data-aos-delay="200">
+                  <i class="fa-solid fa-newspaper"></i>
+                  <a
+                    href="https://drive.google.com/file/d/1JBEZ-i7ixyVrut0JeVGZIBgX7NNCLWul/view?usp=drive_link"
+                    target="_blank"
+                  >
+                    Curriculum Vitae</a
+                  >
+                </div>
+              </div>
             </div>
-            
-            <!-- Card Project -->
 
+            <!-- Profile Image -->
+            <div class="col-lg-6" data-aos="fade-left">
+              <div class="about-image-container">
+                <img
+                  src="assets/img/nadippp.jpg"
+                  alt="Profile Image"
+                  class="about-image"
+                />
+                <div class="about-image-overlay">
+                  <h4>Web Developer</h4>
+                  <p>Passionate about creating seamless digital experiences</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- About Content -->
+          <div class="row mt-5">
+            <div class="col-lg-12" data-aos="fade-up">
+              <div class="about-card">
+                <div class="about-card-header">
+                  <h3>My Story</h3>
+                </div>
+                <div class="about-card-body text-dark">
+                  <p>
+                    <span class="typing fw-bold" id="typed-name"></span>, I'm a
+                    passionate
+                    <span class="highlight">Full Stack Web Developer</span> with
+                    a strong foundation in both front-end and back-end
+                    development. As a Software Engineering Technology student,
+                    I’ve built engaging user interfaces while also developing
+                    robust server-side applications and managing databases
+                    effectively.
+                  </p>
+
+                  <p>
+                    My interest began with the creative aspects of front-end
+                    development, but as I progressed, I found equal enthusiasm
+                    in back-end logic, API integration, and system architecture.
+                    I enjoy the entire development lifecycle — from planning,
+                    coding, debugging, to deploying — and value collaboration,
+                    clean code, and continuous learning.
+                  </p>
+
+                  <p>
+                    Aside from my busy schedule in front of the screen, I still
+                    make time for my hobbies such as playing soccer or futsal,
+                    reading books, listening to my favorite music, and writing
+                    poetry, which is a way for me to release my mind.
+                  </p>
+
+                  <h4 class="mt-4 mb-3 fw-bold">Technical Skills</h4>
+                  <div
+                    class="skills-container"
+                    style="display: flex; flex-wrap: wrap; gap: 12px"
+                  >
+                    <span class="skill-tag"
+                      ><i class="fab fa-html5"></i> HTML5</span
+                    >
+                    <span class="skill-tag"
+                      ><i class="fab fa-css3-alt"></i> CSS3</span
+                    >
+                    <span class="skill-tag"
+                      ><i class="fab fa-js-square"></i> JavaScript</span
+                    >
+                    <span class="skill-tag"
+                      ><i class="fab fa-php"></i> PHP</span
+                    >
+                    <span class="skill-tag"
+                      ><i class="si si-mongodb"></i> MongoDB</span
+                    >
+                    <span class="skill-tag"
+                      ><i class="fas fa-database"></i> MySQL</span
+                    >
+                    <span class="skill-tag"
+                      ><i class="fab fa-python"></i> Python</span
+                    >
+                    <span class="skill-tag"
+                      ><i class="si si-postgresql"></i> PostgreSQL</span
+                    >
+                    <span class="skill-tag"
+                      ><i class="si si-figma"></i> Figma</span
+                    >
+                    <span class="skill-tag"
+                      ><i class="si si-canva"></i> Canva</span
+                    >
+                    <span class="skill-tag"
+                      ><i class="fab fa-microsoft"></i> Microsoft Office</span
+                    >
+                    <span class="skill-tag"
+                      ><i class="fab fa-bootstrap"></i> Bootstrap</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section Edu -->
+      <section
+        class="education"
+        id="edu"
+        style="display: none"
+        data-aos="fade-in"
+      >
+        <div class="container">
+          <a href="#" onclick="showSection('default')" class="back-btn">
+            <i class="fa-solid fa-circle-left"></i> Back
+          </a>
+
+          <div class="section-header" data-aos="fade-up">
+            <h1 class="section-title">Education</h1>
+            <p class="lead">My academic journey and achievements</p>
+          </div>
+
+          <!-- Timeline Education -->
+          <div class="timeline">
+            <!-- University -->
+            <div
+              class="timeline-item"
+              data-aos="fade-right"
+              data-aos-delay="100"
+            >
+              <div class="timeline-content left">
+                <span class="timeline-date">2022 - Present</span>
+                <h3 class="timeline-title">Software Engineering Technology</h3>
+                <p class="timeline-location">
+                  <i class="fas fa-map-marker-alt"></i> IPB University
+                </p>
+                <p class="timeline-desc">
+                  Completed courses in Interface Design, Web Programming, UX
+                  Projects, and Software Testing, while building technical and
+                  soft skills through collaborative projects and campus
+                  activities.
+                </p>
+              </div>
+              <div class="timeline-dot"></div>
+            </div>
+
+            <!-- High School -->
+            <div
+              class="timeline-item"
+              data-aos="fade-left"
+              data-aos-delay="200"
+            >
+              <div class="timeline-content right">
+                <span class="timeline-date">2019 - 2022</span>
+                <h3 class="timeline-title">Software Engineering</h3>
+                <p class="timeline-location">
+                  <i class="fas fa-map-marker-alt"></i> SMK Informatika Pesat
+                </p>
+                <p class="timeline-desc">
+                  Learned website development basics using HTML, CSS, and PHP,
+                  along with database management using MySQL. Completed an
+                  internship at 7Sky Global Solution in collaboration with
+                  VOKASIBISA on a company profile website project.
+                </p>
+              </div>
+              <div class="timeline-dot"></div>
+            </div>
+          </div>
+
+          <!-- Certificates Section -->
+          <div class="certificates-container">
+            <h2 class="mb-4 fw-bold" data-aos="fade-up">
+              Certificates & Achievements
+            </h2>
             <!-- Baris 1 -->
-            <div class="row g-4">
-
-                <!-- Card 1 -->
-                <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="100">
-                            <div class="projek-card project-card">
-                                <div class="project-tag">Website</div>
-                                <div class="project-image">
-                                    <div class="image-hover-wrapper">
-                                        <img src="assets/projek/Comot1.png" class="card-img img-main" alt="Project Image">
-                                        <img src="assets/projek/Comot2.png" class="card-img img-hover" alt="Project Hover Image">
-                                    </div>
-                                </div>
-                                <div class="certificate-body">
-                                    <h5 class="fw-bold mb-2">
-                                        Website Thrift Comot Langsung | User & Admin <a href="https://github.com/AzharNadhif/ComLang" class="menuju" target="_blank"><span class="ms-1">↗</span></a>
-                                    </h5>
-                                    <p class="mb-1 deskripsi">
-                                        ComotLangsung is an online vintage store born from a passion for thrift shopping, offering quality collections like 80s denim jackets and classic shirts. 
-                                    </p>
-                                    <div class="mt-3">
-                                        <div class="mt-3">
-                                            <span class="tech-badge"><i class="fab fa-html5" title="HTML"></i></span>
-                                            <span class="tech-badge"><i class="fab fa-laravel" title="Laravel"></i></span>
-                                            <span class="tech-badge"><i class="fab fa-bootstrap" title="Bootstrap"></i></span>
-                                            <span class="tech-badge"><i class="fab fa-js" title="JavaScript"></i></span>
-                                            <span class="tech-badge"><i class="fab fa-css3-alt" title="CSS"></i></span>
-                                            <span class="tech-badge"><i class="fas fa-database" title="MySQL"></i></span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                </div>
-
-                <!-- Card 2 -->
-                <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="100">
-                    <div class="projek-card project-card">
-                        <div class="project-tag">Website</div>
-                        <div class="project-image">
-                            <div class="image-hover-wrapper">
-                                <img src="assets/projek/Rima1.png" class="card-img img-main" alt="Project Image">
-                                <img src="assets/projek/Rima2.png" class="card-img img-hover" alt="Project Hover Image">
-                            </div>
-                        </div>
-                        <div class="certificate-body">
-                            <h5 class="fw-bold mb-2">
-                                Website Company Profile Rimabatik | User & Admin
-                                <a href="https://github.com/AzharNadhif/RimaBatik" class="menuju" target="_blank"><span class="ms-1">↗</span></a>
-                            </h5>
-                            <p class="mb-1 deskripsi">
-                                Rima Batik is a Depok-based batik company emphasizing high quality and modern designs inspired by local culture.
-                            </p>
-                            <div class="mt-3">
-                                <span class="tech-badge"><i class="fab fa-html5" title="HTML"></i></span>
-                                <span class="tech-badge"><i class="fab fa-laravel" title="Laravel"></i></span>
-                                <span class="tech-badge"><i class="fab fa-bootstrap" title="Bootstrap"></i></span>
-                                <span class="tech-badge"><i class="fab fa-js" title="JavaScript"></i></span>
-                                <span class="tech-badge"><i class="fab fa-css3-alt" title="CSS"></i></span>
-                                <span class="tech-badge"><i class="fas fa-database" title="MySQL"></i></span>
-                            </div>
-                        </div>
+            <div class="row">
+              <!-- Certificate 1 -->
+              <div
+                class="col-md-4 mb-4"
+                data-aos="fade-up"
+                data-aos-delay="100"
+              >
+                <div class="certificate-card certification-card">
+                  <div class="certificate-tag">Certificate</div>
+                  <div class="certificate-image">
+                    <img
+                      src="assets/sertifikat/BNSP.jpg"
+                      alt="Web Development Certificate"
+                    />
+                    <div class="certificate-overlay">
+                      <button class="certificate-view-btn">
+                        <a
+                          href="https://drive.google.com/file/d/12iEwlnxZiXFbYhTsxRuygS0b1Q7lJP62/view?usp=drive_link"
+                          target="_blank"
+                          >View Certificate</a
+                        >
+                      </button>
                     </div>
+                  </div>
+                  <div class="certificate-body">
+                    <h3 class="certificate-title">
+                      Software Development and Programming
+                    </h3>
+                    <p class="certificate-issuer">
+                      <i class="fas fa-award"></i> Lembaga Sertifikasi Profesi
+                      Informatika
+                    </p>
+                    <p class="certificate-date">
+                      <i class="far fa-calendar-alt"></i> 2022
+                    </p>
+                  </div>
                 </div>
+              </div>
 
-                <!-- Card 3 -->
-                <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="100">
-                    <div class="projek-card project-card">
-                        <div class="project-tag">Website</div>
-                        <div class="project-image">
-                            <div class="image-hover-wrapper">
-                                <img src="assets/projek/taniku1.png" class="card-img img-main" alt="Project Image">
-                                <img src="assets/projek/taniku2.png" class="card-img img-hover" alt="Project Hover Image">
-                            </div>
-                        </div>
-                        <div class="certificate-body">
-                            <h5 class="fw-bold mb-2">
-                                Website KawanTani
-                                <a href="https://github.com/Vunix99/TanikuMaju" class="menuju" target="_blank"><span class="ms-1">↗</span></a>
-                            </h5>
-                            <p class="mb-1 deskripsi">
-                                KawanTani helps farmers estimate harvest time accurately using fuzzy logic based on environment, weather, and land data.
-                            </p>
-                            <div class="mt-3">
-                                <span class="tech-badge"><i class="fab fa-html5" title="HTML"></i></span>
-                                <span class="tech-badge"><i class="fab fa-laravel" title="Laravel"></i></span>
-                                <span class="tech-badge"><i class="fab fa-bootstrap" title="Bootstrap"></i></span>
-                                <span class="tech-badge"><i class="fab fa-js" title="JavaScript"></i></span>
-                                <span class="tech-badge"><i class="fab fa-css3-alt" title="CSS"></i></span>
-                                <span class="tech-badge"><i class="fas fa-database" title="SQLite"></i></span>
-                            </div>
-                        </div>
+              <!-- Certificate 2 -->
+              <div
+                class="col-md-4 mb-4"
+                data-aos="fade-up"
+                data-aos-delay="200"
+              >
+                <div class="certificate-card certification-card">
+                  <div class="certificate-tag">Certificate</div>
+                  <div class="certificate-image">
+                    <img src="/assets/sertifikat/BWA.jpg" />
+                    <div class="certificate-overlay">
+                      <button class="certificate-view-btn">
+                        <a
+                          href="https://drive.google.com/file/d/1S5x-bqoDpZspel1ZEGTHRfb42tcsNlwA/view?usp=drive_link"
+                          target="_blank"
+                          >View Certificate</a
+                        >
+                      </button>
                     </div>
+                  </div>
+                  <div class="certificate-body">
+                    <h3 class="certificate-title">Bootcamp UI/UX</h3>
+                    <p class="certificate-issuer">
+                      <i class="fas fa-award"></i> Build With Angga
+                    </p>
+                    <p class="certificate-date">
+                      <i class="far fa-calendar-alt"></i>2024
+                    </p>
+                  </div>
                 </div>
-            </div>
-          
-            <!-- Row 2 -->
-            <div class="row g-4 mt-2">
-                <!-- Card 4 -->
-                <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="100">
-                    <div class="projek-card project-card">
-                        <div class="project-tag">Website</div>
-                        <div class="project-image">
-                            <div class="image-hover-wrapper">
-                                <img src="assets/projek/tuku1.png" class="card-img img-main" alt="Project Image">
-                                <img src="assets/projek/tuku2.png" class="card-img img-hover" alt="Project Hover Image">
-                            </div>
-                        </div>
-                        <div class="certificate-body">
-                            <h5 class="fw-bold mb-2">
-                                Website Company Profile Tukuniku
-                                <a href="https://github.com/AzharNadhif/TukunikuCompro" class="menuju" target="_blank"><span class="ms-1">↗</span></a>
-                            </h5>
-                            <p class="mb-1 deskripsi">
-                                Tukuniku is a retail store offering various frozen halal meat products, rich in protein and affordably priced.
-                            </p>
-                            <div class="mt-3">
-                                <span class="tech-badge"><i class="fab fa-html5" title="HTML"></i></span>
-                                <span class="tech-badge"><i class="fab fa-laravel" title="Laravel"></i></span>
-                                <span class="tech-badge"><i class="fab fa-bootstrap" title="Bootstrap"></i></span>
-                                <span class="tech-badge"><i class="fab fa-js" title="JavaScript"></i></span>
-                                <span class="tech-badge"><i class="fab fa-css3-alt" title="CSS"></i></span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+              </div>
 
-                <!-- Card 5 -->
-                <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="100">
-                    <div class="projek-card project-card">
-                        <div class="project-tag">Website</div>
-                        <div class="project-image">
-                            <div class="image-hover-wrapper">
-                                <img src="assets/projek/ohmaggot1.png" class="card-img img-main" alt="Project Image">
-                                <img src="assets/projek/ohmaggot2.png" class="card-img img-hover" alt="Project Hover Image">
-                            </div>
-                        </div>
-                        <div class="certificate-body">
-                            <h5 class="fw-bold mb-2">
-                                Website E Commerce OhMaggot
-                                <a href="https://github.com/AzharNadhif/Ohmaggot-Kelompok1-B2-" class="menuju" target="_blank"><span class="ms-1">↗</span></a>
-                            </h5>
-                            <p class="mb-1 deskripsi">
-                                OhMaggot! is an e-commerce site supporting maggot farmers by promoting and selling their products through partnerships.
-                            </p>
-                            <div class="mt-3">
-                                <span class="tech-badge"><i class="fab fa-html5" title="HTML"></i></span>
-                                <span class="tech-badge"><i class="fab fa-laravel" title="Laravel"></i></span>
-                                <span class="tech-badge"><i class="fab fa-bootstrap" title="Bootstrap"></i></span>
-                                <span class="tech-badge"><i class="fab fa-js" title="JavaScript"></i></span>
-                                <span class="tech-badge"><i class="fab fa-css3-alt" title="CSS"></i></span>
-                                <span class="tech-badge"><i class="si si-mongodb" title="MongoDB"></i></span>
-                            </div>
-                        </div>
+              <!-- Certificate 3 -->
+              <div
+                class="col-md-4 mb-4"
+                data-aos="fade-up"
+                data-aos-delay="300"
+              >
+                <div class="certificate-card certification-card">
+                  <div class="certificate-tag">Certificate</div>
+                  <div class="certificate-image">
+                    <img
+                      src="assets/sertifikat/PHP1.jpg"
+                      alt="JavaScript Certificate"
+                    />
+                    <div class="certificate-overlay">
+                      <button class="certificate-view-btn">
+                        <a
+                          href="https://drive.google.com/file/d/1cYTiLp--MDn0a_xtjcL0aR6AvRGZYY5d/view?usp=drive_link"
+                          target="_blank"
+                          >View Certificate</a
+                        >
+                      </button>
                     </div>
+                  </div>
+                  <div class="certificate-body">
+                    <h3 class="certificate-title">
+                      PHP | Basic Web Programming
+                    </h3>
+                    <p class="certificate-issuer">
+                      <i class="fas fa-award"></i> PT Hidaya Jasin Solusindo
+                    </p>
+                    <p class="certificate-date">
+                      <i class="far fa-calendar-alt"></i>2021
+                    </p>
+                  </div>
                 </div>
-
-                <!-- Card 6 -->
-                <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="100">
-                    <div class="projek-card project-card">
-                        <div class="project-tag">Website</div>
-                        <div class="project-image">
-                            <div class="image-hover-wrapper">
-                                <img src="assets/projek/PPDI1.png" class="card-img img-main" alt="Project Image">
-                                <img src="assets/projek/PPDI2.png" class="card-img img-hover" alt="Project Hover Image">
-                            </div>
-                        </div>
-                        <div class="certificate-body">
-                            <h5 class="fw-bold mb-2">
-                                Website Company Profile PPDI
-                                <a href="https://github.com/AzharNadhif/PPDI-FIX" class="menuju" target="_blank"><span class="ms-1">↗</span></a>
-                            </h5>
-                            <p class="mb-1 deskripsi">
-                                The PPDI Bogor profile site is an official platform showcasing the organization's role in advocating for the rights of people with disabilities.
-                            </p>
-                            <div class="mt-3">
-                                 <span class="tech-badge"><i class="fab fa-html5" title="HTML"></i></span>
-                                <span class="tech-badge"><i class="fab fa-php" title="Php"></i></span>
-                                <span class="tech-badge"><i class="fab fa-bootstrap" title="Bootstrap"></i></span>
-                                <span class="tech-badge"><i class="fab fa-css3-alt" title="CSS"></i></span>
-                                <span class="tech-badge"><i class="fas fa-database" title="MySQL"></i></span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+              </div>
             </div>
 
-            <!-- Row 3 -->
-            <div class="row g-4 mt-2">
-                <!-- Card 4 -->
-                <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="100">
-                    <div class="projek-card uiux-card">
-                        <div class="project-tag uiux">UI/UX</div>
-                        <div class="project-image">
-                            <img src="assets/projek/mabala.png" class="card-img img-main" alt="Project Image">
-                        </div>
-                        <div class="certificate-body">
-                            <h5 class="fw-bold mb-2">
-                                Design Mabala Badminton Buddy Apps
-                                <a href="https://www.figma.com/design/oiL7KXgIgNtVC88cMOr5ak/MABALA?node-id=1-2&t=soe0cKnEBs9XiIQo-1" class="menuju" target="_blank"><span class="ms-1">↗</span></a>
-                            </h5>
-                            <p class="mb-1 deskripsi">
-                                Designed MABALA app UI/UX to simplify badminton court booking with clear navigation and smooth user flow.
-                            </p>
-                            <div class="mt-3">
-                                <span class="tech-badge"><i class="fab fa-figma" title="Figma"></i></span>
-                            </div>
-                        </div>
+            <!-- Baris 2 -->
+            <div class="row">
+              <!-- Certificate 1 -->
+              <div
+                class="col-md-4 mb-4"
+                data-aos="fade-up"
+                data-aos-delay="100"
+              >
+                <div class="certificate-card certification-card">
+                  <div class="certificate-tag">Certificate</div>
+                  <div class="certificate-image">
+                    <img
+                      src="assets/sertifikat/Dicoding1.jpg"
+                      alt="Web Development Certificate"
+                    />
+                    <div class="certificate-overlay">
+                      <button class="certificate-view-btn">
+                        <a
+                          href="https://drive.google.com/file/d/1B_t_AZRc_dfiCvA1TQKNK6GvhV61mXw3/view?usp=drive_link"
+                          target="_blank"
+                          >View Certificate</a
+                        >
+                      </button>
                     </div>
+                  </div>
+                  <div class="certificate-body">
+                    <h3 class="certificate-title">Learn the basics of AI</h3>
+                    <p class="certificate-issuer">
+                      <i class="fas fa-award"></i> Dicoding
+                    </p>
+                    <p class="certificate-date">
+                      <i class="far fa-calendar-alt"></i> 2024
+                    </p>
+                  </div>
                 </div>
+              </div>
 
-                <!-- Card 5 -->
-                <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="100">
-                    <div class="projek-card uiux-card">
-                        <div class="project-tag uiux">UI/UX</div>
-                        <div class="project-image">
-                            <img src="assets/projek/counsely.png" class="card-img img-main" alt="Project Image">
-                        </div>
-                        <div class="certificate-body">
-                            <h5 class="fw-bold mb-2">
-                                Design Counsely Apps
-                                <a href="https://www.figma.com/design/vndH0YmPIYpUoyUXVjiyJF/Counsely---The-Chipmunk?node-id=1-119&t=rhZY76uMGHI6SgZc-1" class="menuju" target="_blank"><span class="ms-1">↗</span></a>
-                            </h5>
-                            <p class="mb-1 deskripsi">
-                               Designed Counsely app UI/UX for student counseling with AI suggestions and mood tracking in a calming layout.
-                            </p>
-                            <div class="mt-3">
-                                <span class="tech-badge"><i class="fab fa-figma" title="Figma"></i></span>
-                            </div>
-                        </div>
+              <!-- Certificate 2 -->
+              <div
+                class="col-md-4 mb-4"
+                data-aos="fade-up"
+                data-aos-delay="200"
+              >
+                <div class="certificate-card certification-card">
+                  <div class="certificate-tag">Certificate</div>
+                  <div class="certificate-image">
+                    <img src="/assets/sertifikat/WEB1.jpg" />
+                    <div class="certificate-overlay">
+                      <button class="certificate-view-btn">
+                        <a
+                          href="https://drive.google.com/file/d/1OeVI8364G9O1rtX78XmQbC7CFd6f4l8G/view?usp=drive_link"
+                          target="_blank"
+                          >View Certificate</a
+                        >
+                      </button>
                     </div>
+                  </div>
+                  <div class="certificate-body">
+                    <h3 class="certificate-title">
+                      Web Design | Create Landing Page with HTML, CSS
+                    </h3>
+                    <p class="certificate-issuer">
+                      <i class="fas fa-award"></i> PT Tunas Cipta Bersama
+                    </p>
+                    <p class="certificate-date">
+                      <i class="far fa-calendar-alt"></i>2020
+                    </p>
+                  </div>
                 </div>
+              </div>
 
-                <!-- Card 6 -->
-                 <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="100">
-                    <div class="projek-card uiux-card">
-                        <div class="project-tag uiux">UI</div>
-                        <div class="project-image">
-                            <img src="assets/projek/comot.png" class="card-img img-main" alt="Project Image">
-                        </div>
-                        <div class="certificate-body">
-                            <h5 class="fw-bold mb-2">
-                                Design Website Comot Langsung
-                                <a href="https://www.figma.com/design/of4VRsvrIRl3ofNdiE73a7/COMOTTT?node-id=0-1&t=mIrCqBOTotVzmuzs-1" class="menuju" target="_blank"><span class="ms-1">↗</span></a>
-                            </h5>
-                            <p class="mb-1 deskripsi">
-                               Designed the UI for ComotLangsung website with a focus on vintage fashion aesthetics and user-friendly layout.
-                            </p>
-                            <div class="mt-3">
-                                <span class="tech-badge"><i class="fab fa-figma" title="Figma"></i></span>
-                            </div>
-                        </div>
+              <!-- Certificate 3 -->
+              <div
+                class="col-md-4 mb-4"
+                data-aos="fade-up"
+                data-aos-delay="200"
+              >
+                <div class="certificate-card competition-card">
+                  <div class="certificate-tag competition">Achievement</div>
+                  <div class="certificate-image">
+                    <img src="/assets/sertifikat/reclas1.jpg" />
+                    <div class="certificate-overlay">
+                      <button class="certificate-view-btn">
+                        <a
+                          href="https://drive.google.com/file/d/11HzMmz0IP3nuGjxlHhzLzlgHymbt_Amh/view?usp=drive_link"
+                          target="_blank"
+                          >View Certificate</a
+                        >
+                      </button>
                     </div>
+                  </div>
+                  <div class="certificate-body">
+                    <h3 class="certificate-title">
+                      2nd Place | Techsprint Challenge UI/UX Competition
+                    </h3>
+                    <p class="certificate-issuer">
+                      <i class="fas fa-award"></i> Rechlas Tech
+                    </p>
+                    <p class="certificate-date">
+                      <i class="far fa-calendar-alt"></i>2024
+                    </p>
+                  </div>
                 </div>
-                
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section Project -->
+      <section
+        class="py-16 bg-gray-50"
+        id="pro"
+        data-aos="fade-in"
+        style="display: none"
+      >
+        <a href="#" onclick="showSection('default')" class="back-btn">
+          <i class="fa-solid fa-circle-left"></i> Back
+        </a>
+        <div class="section-header text-light" data-aos="fade-up">
+          <h1 class="section-title">Project</h1>
+          <p class="lead">My latest projects and works</p>
+        </div>
+
+        <!-- Card Project -->
+
+        <!-- Baris 1 -->
+        <div class="row g-4">
+          <!-- Card 1 -->
+          <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="projek-card project-card">
+              <div class="project-tag">Website</div>
+              <div class="project-image">
+                <div class="image-hover-wrapper">
+                  <img
+                    src="assets/projek/Comot1.png"
+                    class="card-img img-main"
+                    alt="Project Image"
+                  />
+                  <img
+                    src="assets/projek/Comot2.png"
+                    class="card-img img-hover"
+                    alt="Project Hover Image"
+                  />
+                </div>
+              </div>
+              <div class="certificate-body">
+                <h5 class="fw-bold mb-2">
+                  Website Thrift Comot Langsung | User & Admin
+                  <a
+                    href="https://github.com/AzharNadhif/ComLang"
+                    class="menuju"
+                    target="_blank"
+                    ><span class="ms-1">↗</span></a
+                  >
+                </h5>
+                <p class="mb-1 deskripsi">
+                  ComotLangsung is an online vintage store born from a passion
+                  for thrift shopping, offering quality collections like 80s
+                  denim jackets and classic shirts.
+                </p>
+                <div class="mt-3">
+                  <div class="mt-3">
+                    <span class="tech-badge"
+                      ><i class="fab fa-html5" title="HTML"></i
+                    ></span>
+                    <span class="tech-badge"
+                      ><i class="fab fa-laravel" title="Laravel"></i
+                    ></span>
+                    <span class="tech-badge"
+                      ><i class="fab fa-bootstrap" title="Bootstrap"></i
+                    ></span>
+                    <span class="tech-badge"
+                      ><i class="fab fa-js" title="JavaScript"></i
+                    ></span>
+                    <span class="tech-badge"
+                      ><i class="fab fa-css3-alt" title="CSS"></i
+                    ></span>
+                    <span class="tech-badge"
+                      ><i class="fas fa-database" title="MySQL"></i
+                    ></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="projek-card project-card">
+              <div class="project-tag">Website</div>
+              <div class="project-image">
+                <div class="image-hover-wrapper">
+                  <img
+                    src="assets/projek/Rima1.png"
+                    class="card-img img-main"
+                    alt="Project Image"
+                  />
+                  <img
+                    src="assets/projek/Rima2.png"
+                    class="card-img img-hover"
+                    alt="Project Hover Image"
+                  />
+                </div>
+              </div>
+              <div class="certificate-body">
+                <h5 class="fw-bold mb-2">
+                  Website Company Profile Rimabatik | User & Admin
+                  <a
+                    href="https://github.com/AzharNadhif/RimaBatik"
+                    class="menuju"
+                    target="_blank"
+                    ><span class="ms-1">↗</span></a
+                  >
+                </h5>
+                <p class="mb-1 deskripsi">
+                  Rima Batik is a Depok-based batik company emphasizing high
+                  quality and modern designs inspired by local culture.
+                </p>
+                <div class="mt-3">
+                  <span class="tech-badge"
+                    ><i class="fab fa-html5" title="HTML"></i
+                  ></span>
+                  <span class="tech-badge"
+                    ><i class="fab fa-laravel" title="Laravel"></i
+                  ></span>
+                  <span class="tech-badge"
+                    ><i class="fab fa-bootstrap" title="Bootstrap"></i
+                  ></span>
+                  <span class="tech-badge"
+                    ><i class="fab fa-js" title="JavaScript"></i
+                  ></span>
+                  <span class="tech-badge"
+                    ><i class="fab fa-css3-alt" title="CSS"></i
+                  ></span>
+                  <span class="tech-badge"
+                    ><i class="fas fa-database" title="MySQL"></i
+                  ></span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="projek-card project-card">
+              <div class="project-tag">Website</div>
+              <div class="project-image">
+                <div class="image-hover-wrapper">
+                  <img
+                    src="assets/projek/taniku1.png"
+                    class="card-img img-main"
+                    alt="Project Image"
+                  />
+                  <img
+                    src="assets/projek/taniku2.png"
+                    class="card-img img-hover"
+                    alt="Project Hover Image"
+                  />
+                </div>
+              </div>
+              <div class="certificate-body">
+                <h5 class="fw-bold mb-2">
+                  Website KawanTani
+                  <a
+                    href="https://github.com/Vunix99/TanikuMaju"
+                    class="menuju"
+                    target="_blank"
+                    ><span class="ms-1">↗</span></a
+                  >
+                </h5>
+                <p class="mb-1 deskripsi">
+                  KawanTani helps farmers estimate harvest time accurately using
+                  fuzzy logic based on environment, weather, and land data.
+                </p>
+                <div class="mt-3">
+                  <span class="tech-badge"
+                    ><i class="fab fa-html5" title="HTML"></i
+                  ></span>
+                  <span class="tech-badge"
+                    ><i class="fab fa-laravel" title="Laravel"></i
+                  ></span>
+                  <span class="tech-badge"
+                    ><i class="fab fa-bootstrap" title="Bootstrap"></i
+                  ></span>
+                  <span class="tech-badge"
+                    ><i class="fab fa-js" title="JavaScript"></i
+                  ></span>
+                  <span class="tech-badge"
+                    ><i class="fab fa-css3-alt" title="CSS"></i
+                  ></span>
+                  <span class="tech-badge"
+                    ><i class="fas fa-database" title="SQLite"></i
+                  ></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Row 2 -->
+        <div class="row g-4 mt-2">
+          <!-- Card 4 -->
+          <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="projek-card project-card">
+              <div class="project-tag">Website</div>
+              <div class="project-image">
+                <div class="image-hover-wrapper">
+                  <img
+                    src="assets/projek/tuku1.png"
+                    class="card-img img-main"
+                    alt="Project Image"
+                  />
+                  <img
+                    src="assets/projek/tuku2.png"
+                    class="card-img img-hover"
+                    alt="Project Hover Image"
+                  />
+                </div>
+              </div>
+              <div class="certificate-body">
+                <h5 class="fw-bold mb-2">
+                  Website Company Profile Tukuniku
+                  <a
+                    href="https://github.com/AzharNadhif/TukunikuCompro"
+                    class="menuju"
+                    target="_blank"
+                    ><span class="ms-1">↗</span></a
+                  >
+                </h5>
+                <p class="mb-1 deskripsi">
+                  Tukuniku is a retail store offering various frozen halal meat
+                  products, rich in protein and affordably priced.
+                </p>
+                <div class="mt-3">
+                  <span class="tech-badge"
+                    ><i class="fab fa-html5" title="HTML"></i
+                  ></span>
+                  <span class="tech-badge"
+                    ><i class="fab fa-laravel" title="Laravel"></i
+                  ></span>
+                  <span class="tech-badge"
+                    ><i class="fab fa-bootstrap" title="Bootstrap"></i
+                  ></span>
+                  <span class="tech-badge"
+                    ><i class="fab fa-js" title="JavaScript"></i
+                  ></span>
+                  <span class="tech-badge"
+                    ><i class="fab fa-css3-alt" title="CSS"></i
+                  ></span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 5 -->
+          <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="projek-card project-card">
+              <div class="project-tag">Website</div>
+              <div class="project-image">
+                <div class="image-hover-wrapper">
+                  <img
+                    src="assets/projek/ohmaggot1.png"
+                    class="card-img img-main"
+                    alt="Project Image"
+                  />
+                  <img
+                    src="assets/projek/ohmaggot2.png"
+                    class="card-img img-hover"
+                    alt="Project Hover Image"
+                  />
+                </div>
+              </div>
+              <div class="certificate-body">
+                <h5 class="fw-bold mb-2">
+                  Website E Commerce OhMaggot
+                  <a
+                    href="https://github.com/AzharNadhif/Ohmaggot-Kelompok1-B2-"
+                    class="menuju"
+                    target="_blank"
+                    ><span class="ms-1">↗</span></a
+                  >
+                </h5>
+                <p class="mb-1 deskripsi">
+                  OhMaggot! is an e-commerce site supporting maggot farmers by
+                  promoting and selling their products through partnerships.
+                </p>
+                <div class="mt-3">
+                  <span class="tech-badge"
+                    ><i class="fab fa-html5" title="HTML"></i
+                  ></span>
+                  <span class="tech-badge"
+                    ><i class="fab fa-laravel" title="Laravel"></i
+                  ></span>
+                  <span class="tech-badge"
+                    ><i class="fab fa-bootstrap" title="Bootstrap"></i
+                  ></span>
+                  <span class="tech-badge"
+                    ><i class="fab fa-js" title="JavaScript"></i
+                  ></span>
+                  <span class="tech-badge"
+                    ><i class="fab fa-css3-alt" title="CSS"></i
+                  ></span>
+                  <span class="tech-badge"
+                    ><i class="si si-mongodb" title="MongoDB"></i
+                  ></span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 6 -->
+          <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="projek-card project-card">
+              <div class="project-tag">Website</div>
+              <div class="project-image">
+                <div class="image-hover-wrapper">
+                  <img
+                    src="assets/projek/PPDI1.png"
+                    class="card-img img-main"
+                    alt="Project Image"
+                  />
+                  <img
+                    src="assets/projek/PPDI2.png"
+                    class="card-img img-hover"
+                    alt="Project Hover Image"
+                  />
+                </div>
+              </div>
+              <div class="certificate-body">
+                <h5 class="fw-bold mb-2">
+                  Website Company Profile PPDI
+                  <a
+                    href="https://github.com/AzharNadhif/PPDI-FIX"
+                    class="menuju"
+                    target="_blank"
+                    ><span class="ms-1">↗</span></a
+                  >
+                </h5>
+                <p class="mb-1 deskripsi">
+                  The PPDI Bogor profile site is an official platform showcasing
+                  the organization's role in advocating for the rights of people
+                  with disabilities.
+                </p>
+                <div class="mt-3">
+                  <span class="tech-badge"
+                    ><i class="fab fa-html5" title="HTML"></i
+                  ></span>
+                  <span class="tech-badge"
+                    ><i class="fab fa-php" title="Php"></i
+                  ></span>
+                  <span class="tech-badge"
+                    ><i class="fab fa-bootstrap" title="Bootstrap"></i
+                  ></span>
+                  <span class="tech-badge"
+                    ><i class="fab fa-css3-alt" title="CSS"></i
+                  ></span>
+                  <span class="tech-badge"
+                    ><i class="fas fa-database" title="MySQL"></i
+                  ></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Row 3 -->
+        <div class="row g-4 mt-2">
+          <!-- Card 4 -->
+          <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="projek-card uiux-card">
+              <div class="project-tag uiux">UI/UX</div>
+              <div class="project-image">
+                <img
+                  src="assets/projek/mabala.png"
+                  class="card-img img-main"
+                  alt="Project Image"
+                />
+              </div>
+              <div class="certificate-body">
+                <h5 class="fw-bold mb-2">
+                  Design Mabala Badminton Buddy Apps
+                  <a
+                    href="https://www.figma.com/design/oiL7KXgIgNtVC88cMOr5ak/MABALA?node-id=1-2&t=soe0cKnEBs9XiIQo-1"
+                    class="menuju"
+                    target="_blank"
+                    ><span class="ms-1">↗</span></a
+                  >
+                </h5>
+                <p class="mb-1 deskripsi">
+                  Designed MABALA app UI/UX to simplify badminton court booking
+                  with clear navigation and smooth user flow.
+                </p>
+                <div class="mt-3">
+                  <span class="tech-badge"
+                    ><i class="fab fa-figma" title="Figma"></i
+                  ></span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 5 -->
+          <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="projek-card uiux-card">
+              <div class="project-tag uiux">UI/UX</div>
+              <div class="project-image">
+                <img
+                  src="assets/projek/counsely.png"
+                  class="card-img img-main"
+                  alt="Project Image"
+                />
+              </div>
+              <div class="certificate-body">
+                <h5 class="fw-bold mb-2">
+                  Design Counsely Apps
+                  <a
+                    href="https://www.figma.com/design/vndH0YmPIYpUoyUXVjiyJF/Counsely---The-Chipmunk?node-id=1-119&t=rhZY76uMGHI6SgZc-1"
+                    class="menuju"
+                    target="_blank"
+                    ><span class="ms-1">↗</span></a
+                  >
+                </h5>
+                <p class="mb-1 deskripsi">
+                  Designed Counsely app UI/UX for student counseling with AI
+                  suggestions and mood tracking in a calming layout.
+                </p>
+                <div class="mt-3">
+                  <span class="tech-badge"
+                    ><i class="fab fa-figma" title="Figma"></i
+                  ></span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 6 -->
+          <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="projek-card uiux-card">
+              <div class="project-tag uiux">UI</div>
+              <div class="project-image">
+                <img
+                  src="assets/projek/comot.png"
+                  class="card-img img-main"
+                  alt="Project Image"
+                />
+              </div>
+              <div class="certificate-body">
+                <h5 class="fw-bold mb-2">
+                  Design Website Comot Langsung
+                  <a
+                    href="https://www.figma.com/design/of4VRsvrIRl3ofNdiE73a7/COMOTTT?node-id=0-1&t=mIrCqBOTotVzmuzs-1"
+                    class="menuju"
+                    target="_blank"
+                    ><span class="ms-1">↗</span></a
+                  >
+                </h5>
+                <p class="mb-1 deskripsi">
+                  Designed the UI for ComotLangsung website with a focus on
+                  vintage fashion aesthetics and user-friendly layout.
+                </p>
+                <div class="mt-3">
+                  <span class="tech-badge"
+                    ><i class="fab fa-figma" title="Figma"></i
+                  ></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section Contact -->
+      <section
+        class="contact-session"
+        id="kontak"
+        data-aos="fade-in"
+        style="display: none"
+      >
+        <a href="#" onclick="showSection('default')" class="back-btn">
+          <i class="fa-solid fa-circle-left"></i> Back
+        </a>
+
+        <div class="section-header" data-aos="fade-up">
+          <h1 class="section-title">Get In Touch</h1>
+          <p class="lead">Connect with me across platforms</p>
+        </div>
+
+        <!-- Social Media Links -->
+        <div class="social-links">
+          <div class="row">
+            <!-- LinkedIn -->
+            <div
+              class="col-md-6 col-lg-3 mb-4"
+              data-aos="fade-up"
+              data-aos-delay="100"
+            >
+              <div class="social-card linkedin social-animation delay-1">
+                <div class="social-icon">
+                  <i class="fab fa-linkedin-in"></i>
+                </div>
+                <div class="social-info">
+                  <h3 class="social-title">LinkedIn</h3>
+                  <p class="social-handle">Azhar Nadhif Annaufal</p>
+                  <a
+                    href="https://www.linkedin.com/in/azhar-nadhif/"
+                    target="_blank"
+                    class="social-btn"
+                    >Connect</a
+                  >
+                </div>
+              </div>
             </div>
 
-           
-
-            
-        </section>
-
-        <!-- Section Contact -->
-        <section class="contact-session" id="kontak" data-aos="fade-in" style="display: none;">
-            <a href="#" onclick="showSection('default')" class="back-btn">
-                <i class="fa-solid fa-circle-left"></i> Back
-            </a>
-        
-            <div class="section-header" data-aos="fade-up">
-                <h1 class="section-title ">Get In Touch</h1>
-                <p class="lead">Connect with me across platforms</p>
-            </div>
-        
-            <!-- Social Media Links -->
-            <div class="social-links">
-                <div class="row">
-                    <!-- LinkedIn -->
-                    <div class="col-md-6 col-lg-3 mb-4" data-aos="fade-up" data-aos-delay="100">
-                        <div class="social-card linkedin social-animation delay-1">
-                            <div class="social-icon">
-                                <i class="fab fa-linkedin-in"></i>
-                            </div>
-                            <div class="social-info">
-                                <h3 class="social-title">LinkedIn</h3>
-                                <p class="social-handle">Azhar Nadhif Annaufal</p>
-                                <a href="https://www.linkedin.com/in/azhar-nadhif/" target="_blank" class="social-btn">Connect</a>
-                            </div>
-                        </div>
-                    </div>
-        
-                    <!-- GitHub -->
-                    <div class="col-md-6 col-lg-3 mb-4" data-aos="fade-up" data-aos-delay="200">
-                        <div class="social-card github social-animation delay-2">
-                            <div class="social-icon">
-                                <i class="fab fa-github"></i>
-                            </div>
-                            <div class="social-info">
-                                <h3 class="social-title">GitHub</h3>
-                                <p class="social-handle">@AzharNadhif</p>
-                                <a href="https://github.com/AzharNadhif" target="_blank" class="social-btn">Follow</a>
-                            </div>
-                        </div>
-                    </div>
-        
-                    <!-- Instagram -->
-                    <div class="col-md-6 col-lg-3 mb-4" data-aos="fade-up" data-aos-delay="300">
-                        <div class="social-card instagram social-animation delay-3">
-                            <div class="social-icon">
-                                <i class="fab fa-instagram"></i>
-                            </div>
-                            <div class="social-info">
-                                <h3 class="social-title">Instagram</h3>
-                                <p class="social-handle">@nadhifanfl</p>
-                                <a href="https://instagram.com/nadhifanfl" target="_blank" class="social-btn">Follow</a>
-                            </div>
-                        </div>
-                    </div>
-        
-                    <!-- Gmail -->
-                    <div class="col-md-6 col-lg-3 mb-4" data-aos="fade-up" data-aos-delay="400">
-                        <div class="social-card gmail social-animation delay-4">
-                            <div class="social-icon">
-                                <i class="fas fa-envelope"></i>
-                            </div>
-                            <div class="social-info">
-                                <h3 class="social-title">Email</h3>
-                                <p class="social-handle">azharnadhif29@gmail.com</p>
-                                <a href="mailto:azharnadhif29@gmail.com" class="social-btn">Send Email</a>
-                            </div>
-                        </div>
-                    </div>
+            <!-- GitHub -->
+            <div
+              class="col-md-6 col-lg-3 mb-4"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
+              <div class="social-card github social-animation delay-2">
+                <div class="social-icon">
+                  <i class="fab fa-github"></i>
                 </div>
+                <div class="social-info">
+                  <h3 class="social-title">GitHub</h3>
+                  <p class="social-handle">@AzharNadhif</p>
+                  <a
+                    href="https://github.com/AzharNadhif"
+                    target="_blank"
+                    class="social-btn"
+                    >Follow</a
+                  >
+                </div>
+              </div>
             </div>
-        
-        </section>
-        
-        
+
+            <!-- Instagram -->
+            <div
+              class="col-md-6 col-lg-3 mb-4"
+              data-aos="fade-up"
+              data-aos-delay="300"
+            >
+              <div class="social-card instagram social-animation delay-3">
+                <div class="social-icon">
+                  <i class="fab fa-instagram"></i>
+                </div>
+                <div class="social-info">
+                  <h3 class="social-title">Instagram</h3>
+                  <p class="social-handle">@nadhifanfl</p>
+                  <a
+                    href="https://instagram.com/nadhifanfl"
+                    target="_blank"
+                    class="social-btn"
+                    >Follow</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <!-- Gmail -->
+            <div
+              class="col-md-6 col-lg-3 mb-4"
+              data-aos="fade-up"
+              data-aos-delay="400"
+            >
+              <div class="social-card gmail social-animation delay-4">
+                <div class="social-icon">
+                  <i class="fas fa-envelope"></i>
+                </div>
+                <div class="social-info">
+                  <h3 class="social-title">Email</h3>
+                  <p class="social-handle">azharnadhif29@gmail.com</p>
+                  <a href="mailto:azharnadhif29@gmail.com" class="social-btn"
+                    >Send Email</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
+  </body>
+  <!-- SCRIPT BOOTSTRAP -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
-    
-    
-</body>
-<!-- SCRIPT BOOTSTRAP -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-
-<!-- SCRIPT TITLE -->
-<script>
-        new TypeIt("#companionMethods", {
-        speed: 60,
-        waitUntilVisible: true,
-        loop: true, 
-        loopDelay: 1000, 
+  <!-- SCRIPT TITLE -->
+  <script>
+    new TypeIt("#companionMethods", {
+      speed: 60,
+      waitUntilVisible: true,
+      loop: true,
+      loopDelay: 1000,
     })
-    .type("Foll", { delay: 400 })
-    .move(-2)
-    .delete(1)
-    .type("u")
-    .move(null, { to: "END" })
-    .type(" dtak")
-    .pause(300)
-    .delete(4)
-    .type("stack ")
-    .pause(300)
-    .type("Web Develper.")
-    .move(-4)
-    .type("o")
-    .move(null, { to: "END" })
-    .pause(600)
-    .go();
+      .type("Foll", { delay: 400 })
+      .move(-2)
+      .delete(1)
+      .type("u")
+      .move(null, { to: "END" })
+      .type(" dtak")
+      .pause(300)
+      .delete(4)
+      .type("stack ")
+      .pause(300)
+      .type("Web Develper.")
+      .move(-4)
+      .type("o")
+      .move(null, { to: "END" })
+      .pause(600)
+      .go();
+  </script>
 
-</script>
+  <!-- SCRIPT OPEN NAV -->
+  <!-- JS Scroll -->
+  <script>
+    window.addEventListener("scroll", function () {
+      const navbar = document.querySelector(".navbar");
 
-<!-- SCRIPT OPEN NAV -->
- <!-- JS Scroll -->
-<script>
-    window.addEventListener('scroll', function () {
-        const navbar = document.querySelector('.navbar');
-
-        if (window.scrollY > 50) {
-            navbar.classList.add('scrolled');
-        } else {
-            navbar.classList.remove('scrolled');
-        }
+      if (window.scrollY > 50) {
+        navbar.classList.add("scrolled");
+      } else {
+        navbar.classList.remove("scrolled");
+      }
     });
-</script>
+  </script>
 
- <!-- AOS -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"
+  <!-- AOS -->
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"
     integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw=="
-    crossorigin="anonymous" referrerpolicy="no-referrer">
-</script>
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  ></script>
 
-<script>
+  <script>
     // Inisialisasi AOS dengan opsi yang diinginkan
     AOS.init({
-        duration: 900,
-        once: false,
-        debug: true, // Untuk log elemen yang dianimasikan
+      duration: 900,
+      once: false,
+      debug: true, // Untuk log elemen yang dianimasikan
     });
 
     // Fungsi untuk menampilkan section tertentu dan memicu animasi AOS
     function showSection(sectionId) {
-        // Sembunyikan semua section
-        document.querySelectorAll("section").forEach(section => {
-            section.style.display = "none"; // Sembunyikan semua section
-            section.classList.remove("aos-animate"); // Hapus animasi sebelumnya
-        });
+      // Sembunyikan semua section
+      document.querySelectorAll("section").forEach((section) => {
+        section.style.display = "none"; // Sembunyikan semua section
+        section.classList.remove("aos-animate"); // Hapus animasi sebelumnya
+      });
 
-        // Pilih section yang akan ditampilkan
-        const sectionToShow = document.getElementById(sectionId);
+      // Pilih section yang akan ditampilkan
+      const sectionToShow = document.getElementById(sectionId);
 
-        // Tampilkan section yang dipilih
-        sectionToShow.style.display = "block";
+      // Tampilkan section yang dipilih
+      sectionToShow.style.display = "block";
 
-        // Paksa ulang kelas AOS untuk memicu animasi
-        sectionToShow.querySelectorAll("[data-aos]").forEach(el => {
-            el.classList.remove("aos-animate"); // Reset animasi
-            void el.offsetWidth; // Trigger reflow
-            el.classList.add("aos-animate"); // Tambahkan animasi ulang
-        });
+      // Paksa ulang kelas AOS untuk memicu animasi
+      sectionToShow.querySelectorAll("[data-aos]").forEach((el) => {
+        el.classList.remove("aos-animate"); // Reset animasi
+        void el.offsetWidth; // Trigger reflow
+        el.classList.add("aos-animate"); // Tambahkan animasi ulang
+      });
 
-        // Pastikan AOS mendeteksi elemen baru
-        setTimeout(() => {
-            AOS.refresh(); // Segarkan AOS untuk mendeteksi elemen yang baru muncul
-        }, 100);
+      // Pastikan AOS mendeteksi elemen baru
+      setTimeout(() => {
+        AOS.refresh(); // Segarkan AOS untuk mendeteksi elemen yang baru muncul
+      }, 100);
 
-        // Trigger typeWriter khusus saat buka "tentang"
-        if (sectionId === 'tentang' && !hasTyped) {
-            hasTyped = true;
-            setTimeout(typeWriter, 500); // kasih jeda 0.5 detik sebelum ngetik
-        }
+      // Trigger typeWriter khusus saat buka "tentang"
+      if (sectionId === "tentang" && !hasTyped) {
+        hasTyped = true;
+        setTimeout(typeWriter, 500); // kasih jeda 0.5 detik sebelum ngetik
+      }
+    }
+  </script>
 
-}
-</script>
-
-
-<!-- SCRIPT ABOUT -->
-<script>
-    const typedName = document.getElementById('typed-name');
+  <!-- SCRIPT ABOUT -->
+  <script>
+    const typedName = document.getElementById("typed-name");
     const name = "Hello there";
     let i = 0;
     let hasTyped = false;
 
     function typeWriter() {
-        if (i < name.length) {
-            typedName.innerHTML += name.charAt(i);
-            i++;
-            setTimeout(typeWriter, 100);
-        } else {
-            typedName.classList.remove('typing');
-        }
+      if (i < name.length) {
+        typedName.innerHTML += name.charAt(i);
+        i++;
+        setTimeout(typeWriter, 100);
+      } else {
+        typedName.classList.remove("typing");
+      }
     }
-</script>
+  </script>
 
+  <!-- SCRIPT GSAP -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
 
-
-<!-- SCRIPT GSAP -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-
-<!-- card projek -->
-<script>
+  <!-- card projek -->
+  <script>
     const cards = document.querySelectorAll(".projek");
-  
-    cards.forEach(card => {
+
+    cards.forEach((card) => {
       // Buat timeline animasi tapi pause dulu
       const tl = gsap.timeline({ paused: true, repeat: -1, yoyo: true });
-      
+
       // Goyang-goyang
-      tl.to(card, { rotate: 1, duration: 0.2 })
-        .to(card, { rotate: -1, duration: 0.2 });
-  
+      tl.to(card, { rotate: 1, duration: 0.2 }).to(card, {
+        rotate: -1,
+        duration: 0.2,
+      });
+
       // Aktifkan animasi saat hover
       card.addEventListener("mouseenter", () => {
         tl.play();
       });
-  
+
       // Hentikan animasi saat kursor keluar
       card.addEventListener("mouseleave", () => {
         tl.pause();
         gsap.to(card, { rotate: 0, duration: 0.2 }); // Balik ke posisi semula
       });
     });
-</script>
+  </script>
 
-<!-- card hubungi -->
-<script>
+  <!-- card hubungi -->
+  <script>
     const contactCard = document.querySelector(".hubungi");
-  
+
     function shakeCard(card) {
       // Animasi goyang 3 kali
-      gsap.timeline()
+      gsap
+        .timeline()
         .to(card, { rotate: 3, duration: 0.1 })
         .to(card, { rotate: -3, duration: 0.1 })
         .to(card, { rotate: 3, duration: 0.1 })
         .to(card, { rotate: -3, duration: 0.1 })
         .to(card, { rotate: 0, duration: 0.1 });
     }
-  
+
     // Goyang otomatis tiap 5 detik
     setInterval(() => {
       shakeCard(contactCard);
     }, 5000);
-</script>
-  
+  </script>
 
-<!-- SCRIPT PARTICLES -->
-<script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+  <!-- SCRIPT PARTICLES -->
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
 
-<script>
+  <script>
     particlesJS("particles-js", {
-    "particles": {
-        "number": {
-        "value": 300,
-        "density": {
-            "enable": true,
-            "value_area": 800
-        }
+      particles: {
+        number: {
+          value: 300,
+          density: {
+            enable: true,
+            value_area: 800,
+          },
         },
-        "shape": {
-        "type": "image",
-        "image": {
-            "src": "assets/img/star.png",  // pastikan path-nya benar!
-            "width": 20,
-            "height": 20
-        }
+        shape: {
+          type: "image",
+          image: {
+            src: "assets/img/star.png", // pastikan path-nya benar!
+            width: 20,
+            height: 20,
+          },
         },
-        "opacity": {
-        "value": 0.8,
-        "random": true,
-        "anim": {
-            "enable": true,
-            "speed": 1.2,
-            "opacity_min": 0.3,
-            "sync": false
-        }
+        opacity: {
+          value: 0.8,
+          random: true,
+          anim: {
+            enable: true,
+            speed: 1.2,
+            opacity_min: 0.3,
+            sync: false,
+          },
         },
-        "size": {
-        "value": 8,
-        "random": true
+        size: {
+          value: 8,
+          random: true,
         },
-        "line_linked": {
-        "enable": false
+        line_linked: {
+          enable: false,
         },
-        "move": {
-        "enable": true,
-        "speed": 0.6,
-        "random": true,
-        "straight": false,
-        "out_mode": "out"
-        }
-    },
-    "interactivity": {
-        "detect_on": "canvas",
-        "events": {
-        "onhover": {
-            "enable": false
+        move: {
+          enable: true,
+          speed: 0.6,
+          random: true,
+          straight: false,
+          out_mode: "out",
         },
-        "onclick": {
-            "enable": true,
-            "mode": "repulse"  // inilah efek buyar saat klik
+      },
+      interactivity: {
+        detect_on: "canvas",
+        events: {
+          onhover: {
+            enable: false,
+          },
+          onclick: {
+            enable: true,
+            mode: "repulse", // inilah efek buyar saat klik
+          },
+          resize: true,
         },
-        "resize": true
+        modes: {
+          repulse: {
+            distance: 150,
+            duration: 0.4,
+          },
         },
-        "modes": {
-        "repulse": {
-            "distance": 150,
-            "duration": 0.4
-        }
-        }
-    },
-    "retina_detect": true
+      },
+      retina_detect: true,
     });
-</script>
+  </script>
 
-<!-- SCIPT SECTION PROJECT -->
-<script>
-  // Ambil semua elemen dengan data-bs-toggle="collapse"
-  document.querySelectorAll('[data-bs-toggle="collapse"]').forEach(link => {
-    const targetId = link.getAttribute('href')?.replace('#', ''); // Ambil id target collapse
-    const collapseEl = document.getElementById(targetId);
-    const span = link.querySelector('.toggleText');
+  <!-- SCIPT SECTION PROJECT -->
+  <script>
+    // Ambil semua elemen dengan data-bs-toggle="collapse"
+    document.querySelectorAll('[data-bs-toggle="collapse"]').forEach((link) => {
+      const targetId = link.getAttribute("href")?.replace("#", ""); // Ambil id target collapse
+      const collapseEl = document.getElementById(targetId);
+      const span = link.querySelector(".toggleText");
 
-    if (collapseEl && span) {
-      collapseEl.addEventListener('shown.bs.collapse', () => {
-        span.textContent = 'show less';
-      });
+      if (collapseEl && span) {
+        collapseEl.addEventListener("shown.bs.collapse", () => {
+          span.textContent = "show less";
+        });
 
-      collapseEl.addEventListener('hidden.bs.collapse', () => {
-        span.textContent = 'read more';
-      });
-    }
-  });
-</script>
-
-
+        collapseEl.addEventListener("hidden.bs.collapse", () => {
+          span.textContent = "read more";
+        });
+      }
+    });
+  </script>
 </html>
