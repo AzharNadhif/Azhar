@@ -37,7 +37,7 @@ body {
     z-index: 10; /* ubah dari -1 ke nilai positif */
     position: relative; /* penting agar z-index bekerja */
     cursor: pointer; /* biar terlihat bisa diklik */
-  }
+}
   
 
 .nama:hover {
